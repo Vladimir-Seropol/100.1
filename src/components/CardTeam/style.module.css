@@ -1,0 +1,14 @@
+.card{
+	height: fit-content;
+	padding: 30px 20px;
+	margin-bottom: 50px;
+}
+
+.card h2,
+.card p{
+    margin: 0 30px;
+}
+
+.card img, h2{
+    margin-bottom: 20px;
+}
