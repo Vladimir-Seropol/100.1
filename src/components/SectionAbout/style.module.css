@@ -72,14 +72,18 @@ position: absolute;
         flex-direction: column;
     justify-content: space-between; 
     align-items: center;
-    height: 100%;    
+    height: 100%; 
+    padding-top: 20px;   
     }
     .info{
         max-width: 100%;
+        margin-bottom: 10px;
     }
     .container img{
        max-width: 50%;
    }
-  
+   .span img{
+width: 3%;
+   }
    
 }

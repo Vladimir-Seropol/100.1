@@ -1,5 +1,6 @@
 import { ChangeEvent, Dispatch, FC, useState } from 'react';
 import style from './style.module.css';
+import Nouislider from 'nouislider-react';
 
 type Props = {
     setFilterValue: Dispatch<React.SetStateAction<(sneakers: any[]) => any[]>>;
@@ -8,6 +9,7 @@ type Props = {
 const Search: FC<Props> = ({ setFilterValue }) => {
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
+
 
     const handleMinPriceChange = (event: ChangeEvent<HTMLInputElement>) => {
         setMinPrice(event.target.value);
@@ -27,8 +29,12 @@ const Search: FC<Props> = ({ setFilterValue }) => {
         );
     };
 
+    const Slider = () => (
+        <Nouislider range={{ min: 0, max: 100 }} start={[20, 80]} connect />
+      );
     return (
         <div className={style.container}>
+            
             <input 
                 value={minPrice} 
                 type="number" 

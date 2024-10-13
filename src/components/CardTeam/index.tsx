@@ -9,17 +9,12 @@ type Props = {
 
 const CardTeam: FC<Props> = ({ data }) => {
   return (
-    <div className={style.card}
-      //   style={{ backgroundColor: data.backgroundColor }}
-    >
-      <div className={style.card}>
-        <img src={data.imgUrl} alt="" />
-       
-      </div>
+    <div className={style.card}>
       <div>
-        <h2>
-          {data.name}
-        </h2>
+        <img src={data.imgUrl} alt="" />
+      </div>
+      <div className={style.info}>
+        <h2>{data.name}</h2>
         <p>{data.role}</p>
       </div>
     </div>
