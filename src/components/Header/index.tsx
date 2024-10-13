@@ -5,6 +5,7 @@ import { useIsMobile } from "../../hooks/index";
 import { MobileMenu } from "./MobileMenu";
 import { DesktopMenu } from "./DesktopMenu";
 import Button from "../Buttons/ButtonRed/button.tsx";
+import { Link } from "react-router-dom";
 // import SwitchTheme from "../SwitchTheme/index.tsx";
 
 const Header = () => {
@@ -22,7 +23,8 @@ const Header = () => {
             <Logo />
          
           {isMobile ? <MobileMenu /> : <DesktopMenu />}
-          <span className={style.cart} >Корзина</span>
+          <Link className={style.cart} to={"/cart"}>Корзина</Link>
+          {/* <span className={style.cart} >Корзина</span> */}
         </div>
 
         <div className={style.info}>

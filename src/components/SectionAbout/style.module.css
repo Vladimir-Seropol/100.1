@@ -68,8 +68,14 @@ position: absolute;
 @media screen and (max-width: 878px) {
 
     .container {
-        height: 380px;
-    justify-content: space-between;     
+        display: flex;
+        flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    height: 100%;    
+    }
+    .info{
+        max-width: 100%;
     }
     .container img{
        max-width: 50%;

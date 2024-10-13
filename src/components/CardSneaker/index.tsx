@@ -12,17 +12,19 @@ const CardSneaker: FC<Props> = ({ data }) => {
     <div className={style.card}>
       <div className={style.product_block}>
         <img src={data.imgUrl} alt="" />
-        <p>{data.description}</p>
-      </div>
-      <div className={style.add_block}>
+        <p>{data.title}</p>
+
+         <div className={style.add_block}>
         <Link to={`/sneaker/${data.id}`}>
           <img src="src/assets/View_product.png" alt="" />
         </Link>
-        <Link to={`/sneaker/${data.id}`}>
+        <Link to={`/cart/${data.id}`}>
            <img src="src/assets/Add_cart.png" alt="" />  
         </Link>
        
       </div>
+      </div>
+     
       <div>
         <h2>
           {data.title} {data.vendorСode}

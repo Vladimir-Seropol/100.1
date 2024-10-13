@@ -10,7 +10,7 @@ const SectionTeams = () => {
   const [filterValue] = useState("");
   return (
     <div className="wrapper">
-<section className="container">
+<section className="container" id="team">
       <div className={style.container}>
         <h1>Наша команда</h1>
         <img className={style.absolute} src="src/images/figure1.png" alt="" />

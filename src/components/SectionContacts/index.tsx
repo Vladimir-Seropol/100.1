@@ -11,7 +11,7 @@ const SectionContacts = () => {
     : { background: 'rgba(243, 246, 246, 1)' };
 
   return (
-    <section className={style.wrapper} style={backgroundStyle}>
+    <section className={style.wrapper} style={backgroundStyle} id="contacts">
       <div className={style.container}>
         <h2>Контакты</h2>
 

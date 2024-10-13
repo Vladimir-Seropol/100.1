@@ -12,7 +12,7 @@ const YandexMap: React.FC = () => {
   return (
     <div className="map">
  <YMaps query={{ apikey: APIkey }} >
-      <Map state={mapState} style={{ width: "35vw", height: "100%" }}>
+      <Map state={mapState} style={{ width: "100%", height: "100%" }}>
         <Placemark
           geometry={[59.830499, 30.142152]} // Координаты метки
           properties={{

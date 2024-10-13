@@ -112,3 +112,19 @@
          }
     
 }
+
+@media screen and (max-width: 750px) {
+ 
+    .SneakMax {
+       display: none;    
+         }
+         .container{
+            padding: 10px 20px;
+         }
+         .nav{
+            margin-bottom: 10px;
+         }
+    
+}
+
+

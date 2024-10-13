@@ -6,15 +6,21 @@ import CardsSneaker from "../CardsSneaker";
 //import theme from "../../components/SwitchTheme";
 
 const SectionSneakers = () => {
-  const [filterValue, setFilterValue] = useState("");
+    const [filterFunction, setFilterFunction] = useState<() => (sneakers: any[]) => any[]>(() => (sneakers) => sneakers);
+
+
+//   const [filterValue, setFilterValue] = useState("");
   return (
     
-    <section className="container">
+    <section className="container"  id="#catalog">
       <div className={style.container}>
         <h1>Каталог</h1>
         <div className={style.sneakers_block}>
-        <Search setFilterValue={setFilterValue} />
-        <CardsSneaker filterValue={filterValue} />    
+        <Search setFilterValue={setFilterFunction} />
+        <CardsSneaker filterFunction={filterFunction} />
+
+        {/* <Search setFilterValue={setFilterValue} />
+        <CardsSneaker filterValue={filterValue} />     */}
         </div>
         
       </div>

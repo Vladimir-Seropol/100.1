@@ -29,7 +29,7 @@ const SectionSelection = () => {
   // setFilters(newFilters);
   //   const [filterValue, setFilterValue] = useState("");
   return (
-    <section className={style.wrapper}>
+    <section className={style.wrapper} id="selection">
       <div className={style.container} style={backgroundStyle}>
         <div className={style.info}>
           <h2 className={style.title}>Мы подберем идеальную пару для вас</h2>

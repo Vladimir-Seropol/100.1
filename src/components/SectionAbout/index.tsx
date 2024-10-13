@@ -8,7 +8,7 @@ import style from "./style.module.css";
 const SectionAbout = () => {
   //   const [filterValue, setFilterValue] = useState("");
   return (
-    <section>
+    <section id="about_us">
  <div className="wrapper">
       <div className={style.imeges}>
         <img src="src/images/figure.png" alt="" />
@@ -16,7 +16,7 @@ const SectionAbout = () => {
 
       <div className={style.container}>
         <div className={style.info}>
-          <h2 className={style.title}>Пара слов о нас</h2>
+          <h2 className={style.title} >Пара слов о нас</h2>
           <p className={style.description}>
             Спорт держит нас в форме. Учит дисциплине. Объединяет нас. Через
             спорт мы можем менять жизни. В том числе с помощью воодушевляющих

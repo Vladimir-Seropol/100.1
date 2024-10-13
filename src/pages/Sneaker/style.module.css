@@ -44,7 +44,7 @@ color: rgba(68, 75, 88, 1);
 }
 
 .stars{
-    height: 65px;
+    margin-bottom: 60px;
 }
 
 .size{
@@ -52,7 +52,32 @@ font-size: 16px;
 font-weight: 400;
 line-height: 16px;
 text-align: left;
+}
+
+.sizeOptions {
+    display: flex;
+    flex-wrap: wrap;
+gap: 23px; 
+margin-top: 4px; 
 margin-bottom: 60px;
+}
+
+.sizeButton {
+    margin-top: 0;
+padding: 10px 26px;
+border: 1px solid rgba(178, 181, 187, 1);
+border-radius: 4px;
+background-color:   var(--text1);
+cursor: pointer;
+}
+
+.sizeButton:hover {
+background-color: #f0f0f0; /* Цвет при наведении */
+}
+
+.selected {
+border-color: #ff0000; /* Цвет рамки для выбранного размера */
+background-color: #ffe6e6; /* Цвет фона для выбранного размера */
 }
 
 .price{

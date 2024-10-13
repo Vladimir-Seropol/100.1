@@ -3,7 +3,7 @@ import style from "./style.module.css";
 
 const SectionForm = () => {
   return (
-    <section className={style.wrapper}>
+    <section className={style.wrapper} id="payment">
       <div className={style.container}>
        <ContactForm title="Есть вопросы?" text="Заполните форму и наш менеджер свяжется с вами" />
 

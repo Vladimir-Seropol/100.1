@@ -63,3 +63,28 @@
     background: white;
     transform: rotate(-45deg);
   }
+
+
+  @media screen and (max-width: 663px) {
+.container{
+    right: -230px;
+}
+  }
+
+  @media screen and (max-width: 525px) {
+    .container{
+        right: -200px;
+    }
+      }
+
+      @media screen and (max-width: 470px) {
+        .container{
+            right: -170px;
+        }
+          }
+
+          @media screen and (max-width: 400px) {
+            .container{
+                right: -150px;
+            }
+              }

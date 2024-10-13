@@ -62,5 +62,27 @@
    
 }
 
+@media screen and (max-width: 735px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 
+    .instagram{
+        max-width: 100%;
+      }
+    .foto{
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(4, 3fr);
+      }
+    
+    
+      .foto img:nth-child(2) {
+        display: block;
+        grid-column: 2 / span 2; 
+        grid-row: 1 / span 2; 
+      }
+}
 

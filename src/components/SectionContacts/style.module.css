@@ -82,7 +82,7 @@ color: var(--text);
   }
 
   .map{
-    max-width: 50%;
+    width: 600px;
     
   }
 
@@ -93,6 +93,11 @@ color: var(--text);
        /* flex-direction: column; */
     }
 
+    .map{
+        width: 50%;
+        height: 100%;
+        
+      }
     .container h3{
     font-size: 12px;
     font-weight: 300;
@@ -116,4 +121,20 @@ color: var(--text);
        
         }
     
+}
+
+@media screen and (max-width: 735px){
+    .contacts{
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .contact{
+        justify-content: flex-start;
+        height: 100%;
+        align-items: center;
+    }
+    .map{
+        width: 100%; 
+    }
 }
