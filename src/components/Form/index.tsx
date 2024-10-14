@@ -2,13 +2,21 @@ import React, { useState } from "react";
 import ButtonRed from "../Buttons/ButtonRed/button";
 import style from "./style.module.css";
 
+interface InputProps {
+    type: string; 
+    placeholder: string; 
+  }
+  
+
 interface ButtonProps {
     text: string;
     title: string;
+  phoneInputProps: React.InputHTMLAttributes<HTMLInputElement>;
+    style?: React.CSSProperties;
   }
 
 
-const ContactForm: React.FC<ButtonProps> = ({ text, title }) => {
+const ContactForm: React.FC<ButtonProps> = ({ text, title, phoneInputProps }) => {
   const [name, setName] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
 
@@ -43,10 +51,10 @@ const ContactForm: React.FC<ButtonProps> = ({ text, title }) => {
           <label>
            
             <input
-              type="tel"
+              type={phoneInputProps.type}
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Номер телефона"
+              placeholder={phoneInputProps.placeholder}
               required
             />
           </label>

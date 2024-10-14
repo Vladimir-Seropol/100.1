@@ -17,6 +17,9 @@
     
     
 }
+.inputs{
+    padding: 40px 100px 40px 100px;
+}
 
 .info{
     
@@ -61,9 +64,9 @@ text-align: left;
 }
 
 .selection{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 35px;
+    gap: 35px; */
     padding: 20px 100px 40px 100px;
    border-bottom: 1px solid rgba(68, 75, 88, 1);
    margin-bottom: 20px;
@@ -79,6 +82,7 @@ text-align: left;
  }
  label{
 	cursor: pointer;
+    margin: 5px;
  }
  .inputs{
 	display: flex;
@@ -164,6 +168,9 @@ color: rgba(128, 128, 128, 1);
     .container{
         margin: 30px 0 ;
     }
+    .inputs{
+        padding: 20px 30px 20px 30px;
+    }
  }
  @media screen and (max-width: 878px) {
     .info{
@@ -189,6 +196,12 @@ color: rgba(128, 128, 128, 1);
     .span{
         font-size: 18px;
     }
+    .inputs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+  
  }
 
  @media screen and (max-width: 460px){

@@ -2,7 +2,7 @@
     position: absolute;
     top: 12px;
     right: -300px;
-    z-index: 10;
+    z-index: 31;
     margin-right: 10px;
   }
   .container input[type="checkbox"] {
